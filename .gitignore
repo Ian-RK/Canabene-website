@@ -1,1 +1,22 @@
-docs
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production Build Output
+dist/
+build/
+
+# Environment Variables & Secrets
+.env
+
+# Editor Configurations & IDEs
+.vscode/
+
+# Raw Project Documents 
+docs/
+imgs/
+public/images
+
+# Logs
+logs
