@@ -16,7 +16,6 @@ build/
 # Raw Project Documents 
 docs/
 imgs/
-public/images
 
 # Logs
 logs

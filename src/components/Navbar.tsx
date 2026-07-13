@@ -79,7 +79,7 @@ export default function Navbar() {
             <img
               src="/images/Icon-Canabene-no-bg.png"
               alt="CanaBene logo"
-              className="h-10 lg:h-12 w-auto object-contain transition-opacity group-hover:opacity-90"
+              className="h-14 lg:h-18 w-auto object-contain transition-opacity group-hover:opacity-90"
             />
 
             <div className="flex items-baseline">
