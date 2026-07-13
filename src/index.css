@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #00B074;
+  --color-brand-secondary: #102A43;
+  --color-brand-muted: #627D98;
+  --color-brand-surface: #E3F9F0;
+  --color-brand-accent: #D9A74A;
+
+  --color-text-primary: #212529;
+  --color-text-secondary: #627D98;
+
+  --color-surface-white: #FFFFFF;
+
+  --color-whatsapp-green: #25D366;
+}
+
 @layer base {
   *, *::before, *::after {
     box-sizing: border-box;
@@ -14,8 +29,8 @@
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
-    color: #1f2937;
-    background: #ffffff;
+    color: var(--color-text-primary);
+    background: var(--color-surface-white);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -25,6 +40,10 @@
 }
 
 @layer utilities {
+  .font-brand {
+    font-family: "Optima", "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  
   .font-fraunces {
     font-family: 'Fraunces', serif;
   }

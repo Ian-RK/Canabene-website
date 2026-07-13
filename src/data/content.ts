@@ -41,6 +41,21 @@ export const aboutContent = {
     "Nossa equipe combina experiência farmacêutica, conhecimento regulatório e, acima de tudo, escuta ativa. Aqui, você não é um número. Você é uma pessoa que merece receber a atenção certa.",
     "Trabalhamos exclusivamente com produtos autorizados pela ANVISA, seguindo todas as exigências legais vigentes no Brasil, para que o seu único foco seja o que importa: a sua saúde.",
   ],
+  stats: [
+    { value: "2015", label: "ANVISA regulamentou" },
+    { value: "100%", label: "Legal e regulamentado" },
+    { value: "24h", label: "Retorno máximo" },
+  ],
+  commitment: {
+    title: "Nosso compromisso",
+    items: [
+      "Apenas produtos autorizados pela ANVISA",
+      "Atendimento acolhedor e sem julgamentos",
+      "Informações baseadas em evidências científicas",
+      "Privacidade protegida pela LGPD",
+      "Atendimento realizado por pessoas reais",
+    ],
+  },
   values: [
     {
       icon: "heart",
@@ -68,6 +83,7 @@ export const aboutContent = {
     },
   ],
   futureDoctorsTeaser: {
+    badge: "Em breve - Área para Profissionais de Saúde",
     label: "Você é profissional de saúde?",
     text: "Em breve, lançamos um espaço exclusivo para médicos e dentistas: protocolos clínicos, dosimetria e suporte prescricional. Cadastre seu interesse.",
     cta: "Quero ser avisado",
@@ -92,14 +108,14 @@ export const treatmentContent = {
       name: "Canabidiol",
       color: "green",
       description:
-        "O principal composto terapêutico. Não causa euforia nem alteração de consciência. Reconhecido pela OMS como seguro e sem potencial significativo de abuso. Usado para dor crônica, ansiedade, insônia, epilepsia e condições inflamatórias.",
+        "O principal composto terapêutico, presente na maioria dos produtos prescritos no Brasil. Não causa euforia nem alteração de consciência. Reconhecido pela OMS como seguro e sem potencial significativo de abuso. Usado para epilepsia, ansiedade, autismo, dor crônica e insônia. Prescrito por Receita de Controle Especial (receituário branco, em duas vias).",
     },
     {
       acronym: "THC",
       name: "Tetrahidrocanabinol",
       color: "teal",
       description:
-        "Presente em alguns medicamentos em doses controladas e prescritas. Tem propriedades analgésicas e pode complementar o efeito do CBD em certas condições. Só é utilizado quando indicado por médico, dentro dos limites legais da ANVISA.",
+        "Presente em produtos com mais de 0,2% de THC, sempre em doses controladas e prescritas. Indicado principalmente para dor intensa, náusea e espasticidade. Exige Receita Amarela (Notificação de Receita A) e acompanhamento médico regular, dentro dos limites legais da ANVISA.",
     },
   ],
   conditions: {
@@ -107,14 +123,15 @@ export const treatmentContent = {
     disclaimer:
       "* Estes são campos de pesquisa clínica ativa. A indicação deve sempre partir de um médico, com base no seu histórico de saúde.",
     list: [
-      "Dor crônica e neuropática",
-      "Epilepsia e crises convulsivas",
       "Ansiedade e transtornos de humor",
       "Insônia e distúrbios do sono",
+      "Depressão",
+      "Autismo (comportamento e qualidade do sono)",
+      "Dor crônica e neuropática (incluindo fibromialgia)",
+      "Epilepsia resistente a outros medicamentos",
+      "Náuseas, dor e perda de apetite na quimioterapia",      
+      "Doenças neurodegenerativas (Parkinson e Alzheimer)",
       "Espasticidade muscular (Esclerose Múltipla)",
-      "Náuseas e vômitos em tratamento oncológico",
-      "Condições inflamatórias e autoimunes",
-      "Dores associadas a doenças degenerativas",
     ],
   },
   howToAccess: {
@@ -124,25 +141,25 @@ export const treatmentContent = {
         number: "01",
         title: "Consulta médica",
         description:
-          "O processo começa com um médico habilitado que avalia o seu caso e, se indicado, emite uma prescrição.",
+          "O processo começa com um médico ou cirurgião-dentista que conheça cannabis medicinal, avalie o seu caso e, se indicado, emita uma prescrição.",
       },
       {
         number: "02",
         title: "Prescrição e documentação",
         description:
-          "A receita médica e, quando necessário, a autorização da ANVISA são os documentos que garantem a legalidade do seu tratamento.",
+          "Dependendo do produto, você recebe uma Receita de Controle Especial (produtos com até 0,2% de THC) ou uma Receita Amarela — Notificação de Receita A (produtos com mais de 0,2% de THC). Guarde sempre o original: ela é exigida na farmácia ou no desembaraço da importação.",
       },
       {
         number: "03",
         title: "Orientação CanaBene",
         description:
-          "Nossa equipe te acompanha na interpretação da prescrição, no acesso ao produto correto e nas dúvidas do dia a dia.",
+          "Nossa equipe te ajuda a escolher entre as três formas de aquisição: farmácias autorizadas, importação direta (com autorização individual da ANVISA) ou associações de pacientes. E acompanhamos você nas dúvidas do dia a dia.",
       },
       {
         number: "04",
         title: "Acesso ao medicamento",
         description:
-          "O produto é entregue com nota fiscal, dentro das normas da ANVISA. Tudo documentado, tudo legal.",
+          "O produto é entregue com nota fiscal, dentro das normas da ANVISA. Da consulta até o produto chegar em casa, o processo costuma levar de 2 a 4 semanas.",
       },
     ],
   },
@@ -179,6 +196,7 @@ export const faqContent = {
         "**O que garante a sua segurança jurídica:**",
         "• **Prescrição médica:** emitida por médico registrado no CRM, com seu nome, CPF e a substância prescrita;\n• **Nota fiscal:** o produto deve ser adquirido de fornecedor autorizado, com nota fiscal em seu nome;\n• **Documentação completa:** guarde sempre a receita e o comprovante de compra.",
         "Com esses documentos em mãos, você está protegido legalmente. **Nenhuma autoridade pode questionar um paciente que segue o protocolo legal.**",
+        "Uma dica prática: se for viajar com o produto, leve sempre a receita original com você.",
         "A CanaBene só opera dentro dessas regras. Se você ainda não tem prescrição, podemos te orientar sobre como iniciar esse processo com um médico.",
       ],
       highlight:
@@ -223,11 +241,64 @@ export const faqContent = {
       question: "Crianças e idosos podem fazer o tratamento?",
       answer: [
         "Sim, e em muitos casos, são exatamente esses grupos que mais se beneficiam.",
-        "**Crianças:** o uso de CBD em crianças com epilepsia refratária é uma das indicações com maior volume de evidências científicas no mundo. No Brasil, foi justamente o caso de crianças com epilepsia grave que motivou as primeiras autorizações da ANVISA. O tratamento pediátrico exige atenção redobrada na dosagem e acompanhamento constante, o que um bom médico garantirá.",
-        "**Idosos:** pacientes idosos frequentemente apresentam dores crônicas, insônia e condições inflamatórias. O CBD tem um perfil de segurança favorável nessa faixa etária, com menos interações adversas do que muitos medicamentos convencionais. A avaliação médica é indispensável para checar interações com outros remédios em uso.",
+        "**Crianças:** o uso de CBD em crianças com epilepsia refratária é uma das indicações com maior volume de evidências científicas no mundo. No Brasil, foi justamente o caso de crianças com epilepsia grave que motivou as primeiras autorizações da ANVISA. O canabidiol também é usado com frequência em crianças com autismo, ajudando na melhora do comportamento e da qualidade do sono. O tratamento pediátrico exige atenção redobrada na dosagem e acompanhamento constante, o que um bom médico garantirá.",
+        "**Idosos:** pacientes idosos frequentemente apresentam dores crônicas, insônia, Parkinson e Alzheimer, entre outras condições. O CBD tem um perfil de segurança favorável nessa faixa etária, com menos interações adversas do que muitos medicamentos convencionais. A avaliação médica é indispensável para checar interações com outros remédios em uso.",
       ],
       highlight:
         "Crianças e idosos podem fazer o tratamento, com acompanhamento médico especializado.",
+    },
+    {
+      id: 7,
+      question: "A cannabis medicinal cura todas as doenças?",
+      answer: [
+        "Não. Na maioria dos casos, a cannabis medicinal atua como um tratamento complementar, e não como cura.",
+        "O principal benefício é o alívio de sintomas e a melhora significativa da qualidade de vida em condições como dor crônica, ansiedade, insônia e espasmos musculares. Ela não deve ser vista como cura definitiva para todas as patologias, e o acompanhamento médico contínuo é indispensável para monitorar a evolução do quadro.",
+      ],
+      highlight:
+        "Alívio de sintomas e melhora da qualidade de vida — não uma cura definitiva.",
+    },
+    {
+      id: 8,
+      question: "Posso dirigir ou trabalhar normalmente durante o tratamento?",
+      answer: [
+        "Depende da composição do produto, especialmente do teor de THC, e da reação individual do seu organismo.",
+        "Nas primeiras semanas de tratamento, ou logo após qualquer ajuste de dose, o recomendado é observar com atenção como o seu corpo reage antes de dirigir ou operar máquinas pesadas. Produtos ricos em CBD costumam ter impacto mínimo na atenção; já produtos com THC podem causar sonolência leve no início.",
+        "Converse sempre com o seu médico sobre a sua rotina diária para receber orientações personalizadas.",
+      ],
+      highlight:
+        "Observe como o corpo reage nas primeiras semanas antes de dirigir ou operar máquinas.",
+    },
+    {
+      id: 9,
+      question: "Quais são os efeitos colaterais mais comuns?",
+      answer: [
+        "Os efeitos mais comuns são leves e tendem a desaparecer nas primeiras semanas: boca seca, sonolência, aumento do apetite e alterações de humor.",
+        "Na maioria das vezes, eles ocorrem enquanto a dose está sendo ajustada. Se aparecerem, comunique ao seu médico — uma simples adaptação na dose ou no horário costuma resolver.",
+      ],
+      highlight:
+        "Efeitos leves e passageiros. Fale com seu médico para ajustar dose ou horário.",
+    },
+    {
+      id: 10,
+      question: "Como devo tomar o óleo de cannabis medicinal?",
+      answer: [
+        "O ideal é colocar o óleo diretamente na boca ou em uma colher — a absorção é muito mais eficiente dessa forma. Misturar em água não é recomendado, já que o óleo não se dissolve e boa parte do produto se perde na superfície ou na parede do copo.",
+        "Se preferir misturar com algum alimento, escolha algo gorduroso, como iogurte integral, leite ou abacate. Tomar junto com uma refeição também costuma melhorar a absorção e reduzir efeitos colaterais.",
+        "O melhor horário depende do objetivo do tratamento: para dor crônica e ansiedade, o uso pela manhã (ou dividido entre manhã e noite) é mais comum; para insônia, a dose à noite costuma fazer mais sentido. Siga sempre a orientação do seu médico.",
+      ],
+      highlight:
+        "Tome diretamente na boca ou com alimento gorduroso, de preferência durante uma refeição.",
+    },
+    {
+      id: 11,
+      question: "Quanto custa o tratamento com cannabis medicinal?",
+      answer: [
+        "O valor mensal varia bastante conforme o produto, a dose e a forma de aquisição, mas costuma ficar entre R$ 150 e R$ 800.",
+        "Em alguns estados, como São Paulo, o SUS fornece o medicamento gratuitamente para indicações de maior gravidade e benefício clínico comprovado.",
+        "Fale com a gente para entender as opções de acesso que fazem mais sentido para o seu caso e o seu orçamento.",
+      ],
+      highlight:
+        "Custo médio mensal entre R$ 150 e R$ 800, variando conforme o produto e a dose.",
     },
   ],
   cta: "Ainda tem dúvidas? Fale com a gente",
@@ -359,6 +430,11 @@ export const seoData = {
     "cannabis medicinal sem ficar chapado",
     "canabidiol OMS segurança dependência",
     "acesso cannabis medicinal anvisa rdc 327",
+    "CBD autismo tratamento",
+    "cannabis medicinal Parkinson Alzheimer",
+    "receita amarela cannabis medicinal",
+    "receita controle especial CBD",
+    "quanto custa tratamento cannabis medicinal",
   ],
   pageTitle:
     "CanaBene | Cannabis Medicinal Legal no Brasil - Orientação para Pacientes",

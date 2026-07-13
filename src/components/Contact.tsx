@@ -33,7 +33,7 @@ export default function Contact() {
           <span className="inline-block text-green-600 font-semibold text-sm uppercase tracking-widest mb-4">
             {contactContent.sectionLabel}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 max-w-3xl mx-auto mb-4"
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-secondary max-w-3xl mx-auto mb-4"
             style={{ fontFamily: "'Fraunces', serif" }}>
             {contactContent.headline}
           </h2>
@@ -44,7 +44,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* WhatsApp Primary CTA */}
-          <div className="bg-gradient-to-br from-green-500 to-teal-600 rounded-3xl p-10 text-white relative overflow-hidden">
+          <div className="bg-linear-to-br from-green-500 to-teal-600 rounded-3xl p-10 text-white relative overflow-hidden">
             {/* Decorative */}
             <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -83,7 +83,7 @@ export default function Contact() {
 
           {/* Alternative Contacts */}
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-6">
+            <h3 className="text-xl font-bold text-brand-secondary mb-6">
               {contactContent.alternativeContact.title}
             </h3>
             <div className="space-y-4">
@@ -94,14 +94,14 @@ export default function Contact() {
                     key={item.label}
                     className="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:border-green-200 hover:bg-green-50/50 transition-all"
                   >
-                    <div className={`w-10 h-10 ${colors.bg} ${colors.text} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                    <div className={`w-10 h-10 ${colors.bg} ${colors.text} rounded-xl flex items-center justify-center shrink-0`}>
                       {contactIcons[item.icon]}
                     </div>
                     <div>
                       <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
                         {item.label}
                       </div>
-                      <div className="font-semibold text-gray-900 mb-1">{item.value}</div>
+                      <div className="font-semibold text-brand-secondary mb-1">{item.value}</div>
                       <div className="text-sm text-gray-500 leading-relaxed">{item.description}</div>
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function Contact() {
             {/* Trust signals */}
             <div className="mt-8 p-5 bg-green-50 rounded-2xl border border-green-100">
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-green-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
                 <div>
