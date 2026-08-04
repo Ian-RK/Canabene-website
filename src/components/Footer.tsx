@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-12 h-12 rounded-xl bg-linear-to-br from-white to-brand-primary flex items-center justify-center shadow-md">
                 <img
-                  src="/images/Icon-Canabene-no-bg.png"
+                  src="/imgs/Icon-Canabene-no-bg.png"
                   alt="CanaBene logo"
                   className="h-10 lg:h-12 w-auto object-contain transition-opacity group-hover:opacity-90"
                 />
@@ -81,7 +81,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div>
                 <div className="text-xs font-semibold text-text-secondary/80 uppercase tracking-wider mb-1">Horário</div>
-                <div className="text-sm">Seg-Sex: 8h às 18h</div>
+                <div className="text-sm">Seg-Sex: 8h às 20h</div>
                 <div className="text-sm">Sábado: 9h às 13h</div>
               </div>
               <div>

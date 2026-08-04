@@ -20,17 +20,17 @@ export default function App() {
         {/* Seção 1: Home / Hero */}
         <Hero />
 
-        {/* Seção 2: Sobre Nós */}
-        <About />
-
-        {/* Seção 3: O Tratamento */}
+        {/* Seção 2: O Tratamento */}
         <Treatment />
 
-        {/* Seção 4: FAQ - Dúvidas Frequentes */}
+        {/* Seção 3: FAQ - Dúvidas Frequentes */}
         <FAQ />
 
-        {/* Seção 5: Blog / Biblioteca (Teaser) */}
+        {/* Seção 4: Blog / Biblioteca (Teaser) */}
         <Blog />
+
+        {/* Seção 5: Sobre Nós */}
+        <About />
 
         {/* Seção 6: Contato */}
         <Contact />

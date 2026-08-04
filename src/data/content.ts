@@ -5,10 +5,10 @@ export const WHATSAPP_URL = "https://wa.me/5511999999999?text=Olá!%20Gostaria%2
 
 export const siteConfig = {
   name: "CanaBene",
-  tagline: "Cuidado com base em ciência. Acesso com segurança.",
+  tagline: "Juntos pelo seu bem-estar.",
   email: "atendimento@canabene.com.br",
   emailProfissionais: "profissionais@canabene.com.br",
-  horarioAtendimento: "Segunda a Sexta, das 8h às 18h | Sábado, das 9h às 13h",
+  horarioAtendimento: "Segunda a Sexta, das 8h às 20h | Sábado, das 9h às 13h",
   whatsapp: WHATSAPP_URL,
 };
 
@@ -16,14 +16,12 @@ export const siteConfig = {
 // SEÇÃO 1 - HERO / HOME
 // ============================================================
 export const heroContent = {
-  badge: "Regulamentado pela ANVISA",
   headline: "Você não precisa enfrentar a dor sozinho.",
   subheadline:
-    "A cannabis medicinal é uma opção real, legal e segura para milhares de pacientes no Brasil. Na CanaBene, a gente te orienta em cada etapa do caminho, com informação de verdade e um time que sabe do que está falando.",
-  cta: "Quero saber como funciona",
-  ctaSecondary: "Tire suas dúvidas agora",
+    "A cannabis medicinal é uma opção real, legal e segura para milhares de pacientes no Brasil.",
+  cta: "Quero saber mais",
+  ctaSecondary: "Tire suas dúvidas",
   trustBadges: [
-    { icon: "shield", label: "Regulamentado pela ANVISA" },
     { icon: "file-text", label: "Exige prescrição médica" },
     { icon: "lock", label: "Privacidade protegida (LGPD)" },
     { icon: "message-circle", label: "Atendimento humanizado" },
@@ -31,67 +29,7 @@ export const heroContent = {
 };
 
 // ============================================================
-// SEÇÃO 2 - SOBRE NÓS
-// ============================================================
-export const aboutContent = {
-  sectionLabel: "Quem somos",
-  headline: "Nascemos para simplificar o que parece complicado.",
-  paragraphs: [
-    "Existimos porque acreditamos que nenhum paciente deveria perder tempo tentando entender uma burocracia que deveria ser simples. A CanaBene nasceu da necessidade real: reunir em um só lugar orientação confiável, atendimento humano e acesso a medicamentos regulamentados.",
-    "Nossa equipe combina experiência farmacêutica, conhecimento regulatório e, acima de tudo, escuta ativa. Aqui, você não é um número. Você é uma pessoa que merece receber a atenção certa.",
-    "Trabalhamos exclusivamente com produtos autorizados pela ANVISA, seguindo todas as exigências legais vigentes no Brasil, para que o seu único foco seja o que importa: a sua saúde.",
-  ],
-  stats: [
-    { value: "2015", label: "ANVISA regulamentou" },
-    { value: "100%", label: "Legal e regulamentado" },
-    { value: "24h", label: "Retorno máximo" },
-  ],
-  commitment: {
-    title: "Nosso compromisso",
-    items: [
-      "Apenas produtos autorizados pela ANVISA",
-      "Atendimento acolhedor e sem julgamentos",
-      "Informações baseadas em evidências científicas",
-      "Privacidade protegida pela LGPD",
-      "Atendimento realizado por pessoas reais",
-    ],
-  },
-  values: [
-    {
-      icon: "heart",
-      title: "Cuidado genuíno",
-      description:
-        "Cada atendimento começa com escuta. Entendemos a sua história antes de oferecer qualquer orientação.",
-    },
-    {
-      icon: "book-open",
-      title: "Embasamento científico",
-      description:
-        "Todas as informações que compartilhamos têm respaldo em evidências clínicas e na regulamentação oficial.",
-    },
-    {
-      icon: "shield-check",
-      title: "Transparência total",
-      description:
-        "Sem promessas vazias. Sem milagres. Somos diretos sobre o que a cannabis medicinal pode (e o que ela não pode) fazer.",
-    },
-    {
-      icon: "users",
-      title: "Para você e para quem você ama",
-      description:
-        "Atendemos pacientes de todas as idades, inclusive crianças e idosos, sempre com o suporte de um profissional de saúde.",
-    },
-  ],
-  futureDoctorsTeaser: {
-    badge: "Em breve - Área para Profissionais de Saúde",
-    label: "Você é profissional de saúde?",
-    text: "Em breve, lançamos um espaço exclusivo para médicos e dentistas: protocolos clínicos, dosimetria e suporte prescricional. Cadastre seu interesse.",
-    cta: "Quero ser avisado",
-  },
-};
-
-// ============================================================
-// SEÇÃO 3 - O QUE É O TRATAMENTO
+// SEÇÃO 2 - O QUE É O TRATAMENTO
 // ============================================================
 export const treatmentContent = {
   sectionLabel: "O tratamento",
@@ -108,24 +46,39 @@ export const treatmentContent = {
       name: "Canabidiol",
       color: "green",
       description:
-        "O principal composto terapêutico, presente na maioria dos produtos prescritos no Brasil. Não causa euforia nem alteração de consciência. Reconhecido pela OMS como seguro e sem potencial significativo de abuso. Usado para epilepsia, ansiedade, autismo, dor crônica e insônia. Prescrito por Receita de Controle Especial (receituário branco, em duas vias).",
+        "O CBD é o composto mais conhecido quando o assunto é cannabis medicinal, justamente porque não causa o efeito psicoativo do THC. Esse composto costuma ser a porta de entrada para muitos pacientes. Ele é estudado e utilizado principalmente por seu potencial de reduzir a ansiedade, aliviar inflamações e ajudar no controle de crises epilépticas, além de auxiliar na regulação do sono. Uma característica interessante do CBD é que ele também ajuda a \"equilibrar\" os efeitos do THC, tornando o tratamento mais completo quando os dois são usados juntos.",
     },
     {
       acronym: "THC",
       name: "Tetrahidrocanabinol",
       color: "teal",
       description:
-        "Presente em produtos com mais de 0,2% de THC, sempre em doses controladas e prescritas. Indicado principalmente para dor intensa, náusea e espasticidade. Exige Receita Amarela (Notificação de Receita A) e acompanhamento médico regular, dentro dos limites legais da ANVISA.",
+        "O THC é o composto responsável pelo efeito \"psicoativo\" e que produz relaxamento. Mas, no contexto medicinal, ele vai muito além disso: em doses controladas e com orientação profissional, o THC pode ajudar no alívio de dores crônicas, na redução de náuseas, no estímulo do apetite e na melhora do sono. O que define se o THC será um aliado terapêutico é a dose certa, a proporção com outros compostos e o acompanhamento médico.",
+    },
+    {
+      acronym: "CBG",
+      name: "canabigerol",
+      color: "teal",
+      description:
+        "O CBG aparece em quantidades pequenas na planta madura, e vem ganhando atenção crescente. Assim como o CBD, o CBG não causa efeito psicoativo, e as pesquisas apontam possíveis benefícios ligados à ação anti-inflamatória, ao conforto digestivo, à proteção das células nervosas e a um efeito de foco e disposição relatado por alguns pacientes.",
+    },
+    {
+      acronym: "CBN",
+      name: "canabinol",
+      color: "green",
+      description:
+        "O CBN aparece em maior quantidade em plantas mais \"maduras\". Seu efeito psicoativo é muito leve, bem mais fraco que o do THC. O CBN vem sendo estudado principalmente pelo seu potencial relaxante e por ajudar na qualidade do sono, sendo frequentemente associado à sensação de tranquilidade, o que o torna interessante para quem busca auxílio para insônia e descanso.",
     },
   ],
+  compoundNote:
+  "Um aspecto importante é que esses compostos agem de formas diferentes em cada pessoa, diferente de medicamentos convencionais e o tratamento com cannabis medicinal deve sempre ser feito com prescrição e acompanhamento de um profissional de saúde.",
   conditions: {
     title: "Condições em que o tratamento é estudado",
     disclaimer:
       "* Estes são campos de pesquisa clínica ativa. A indicação deve sempre partir de um médico, com base no seu histórico de saúde.",
     list: [
-      "Ansiedade e transtornos de humor",
+      "Ansiedade, transtornos de humor e Depressão",
       "Insônia e distúrbios do sono",
-      "Depressão",
       "Autismo (comportamento e qualidade do sono)",
       "Dor crônica e neuropática (incluindo fibromialgia)",
       "Epilepsia resistente a outros medicamentos",
@@ -134,26 +87,64 @@ export const treatmentContent = {
       "Espasticidade muscular (Esclerose Múltipla)",
     ],
   },
+  treatmentFaq: [
+    {
+      id: 1,
+      question: "A cannabis medicinal serve como cura para todas as doenças?",
+      answer: [
+        "Não. É importante entender que a cannabis medicinal, na maioria das vezes, atua como um tratamento complementar. E tem a função de equilibrar o organismo e promover o funcionamento normal de todos os sistemas, o objetivo é auxiliar o organismo a combater sintomas e desconfortos. Seu principal benefício é o alívio de sintomas e a melhora significativa da qualidade de vida em condições como dores crônicas, ansiedade, insônia e espasmos musculares. Ela não deve ser vista como uma cura definitiva para todas as patologias, e o acompanhamento médico é indispensável para monitorar a evolução do quadro.",
+      ],
+      highlight:
+        "Alívio de sintomas e melhora da qualidade de vida, não uma cura definitiva.",
+    },
+    {
+      id: 2,
+      question: "O efeito do tratamento é imediato a partir da primeira dose?",
+      answer: [
+        "Na grande maioria das vezes a melhora dos sintomas ocorre a partir de 7 dias de utilização. O organismo humano precisa de um período de adaptação aos canabinoides. O protocolo médico padrão costuma iniciar com doses muito baixas, que são aumentadas gradualmente (processo chamado de titulação) até que se encontre a dose ideal para o paciente. Os benefícios mais consistentes costumam ser observados após algumas semanas de uso regular e contínuo.",
+      ],
+      highlight:
+        "Paciência e acompanhamento médico são parte do tratamento.",
+    },
+    {
+      id: 3,
+      question: "Crianças e idosos podem fazer o tratamento?",
+      answer: [
+        "Sim, ambos os públicos podem se beneficiar amplamente. Em crianças, o uso é comum em casos de epilepsia refratária e autismo; em idosos, é frequentemente indicado para dores crônicas, Parkinson e Alzheimer. No entanto, por serem públicos mais sensíveis, o monitoramento médico deve ser rigoroso para ajustar as doses corretamente e evitar interações com outros medicamentos que o paciente já utilize.",
+      ],
+      highlight:
+        "Crianças e idosos podem fazer o tratamento, com acompanhamento médico especializado.",
+    },
+    {
+      id: 4,
+      question: "Posso dirigir ou trabalhar normalmente durante o tratamento?",
+      answer: [
+        "Isso depende da composição do produto (especialmente o teor de THC) e da reação individual de cada organismo. Nas primeiras semanas de tratamento ou após ajustes de dose, recomenda-se observar atentamente como o corpo reage antes de realizar atividades que exijam muita atenção, como dirigir ou operar máquinas pesadas. Sempre consulte seu médico sobre sua rotina diária para receber orientações personalizadas.",
+      ],
+      highlight:
+        "Observe como o corpo reage nas primeiras semanas antes de dirigir ou operar máquinas.",
+    },
+  ],
   howToAccess: {
-    title: "Como funciona o acesso legal",
+    title: "Como funciona o acesso ao cannabis medicinal",
     steps: [
       {
         number: "01",
         title: "Consulta médica",
         description:
-          "O processo começa com um médico ou cirurgião-dentista que conheça cannabis medicinal, avalie o seu caso e, se indicado, emita uma prescrição.",
+          "O processo começa com um médico ou profissional da saúde apto a prescrever cannabis medicinal, que avalia o seu caso e, se indicado, realiza uma prescrição.",
       },
       {
         number: "02",
         title: "Prescrição e documentação",
         description:
-          "Dependendo do produto, você recebe uma Receita de Controle Especial (produtos com até 0,2% de THC) ou uma Receita Amarela — Notificação de Receita A (produtos com mais de 0,2% de THC). Guarde sempre o original: ela é exigida na farmácia ou no desembaraço da importação.",
+          "Dependendo do produto, você recebe uma Receita de Dupla Via (produtos com até 0,2% de THC) ou uma Receita Amarela. Notificação de Receita A (produtos com mais de 0,2% de THC). Guarde a sua via da receita.",
       },
       {
         number: "03",
         title: "Orientação CanaBene",
         description:
-          "Nossa equipe te ajuda a escolher entre as três formas de aquisição: farmácias autorizadas, importação direta (com autorização individual da ANVISA) ou associações de pacientes. E acompanhamos você nas dúvidas do dia a dia.",
+          "Nossa equipe te ajuda na orientação sobre os próximos passos para adquirir o seu produto. Te orientamos sobre a utilização da medicação. E acompanhamos você nas dúvidas do dia a dia.",
       },
       {
         number: "04",
@@ -163,26 +154,25 @@ export const treatmentContent = {
       },
     ],
   },
-  cta: "Falar com um especialista no WhatsApp",
+  cta: "Quer saber mais? Fale conosco!",
 };
 
 // ============================================================
-// SEÇÃO 4 - FAQ (DÚVIDAS FREQUENTES)
+// SEÇÃO 3 - FAQ (DÚVIDAS FREQUENTES)
 // ============================================================
 export const faqContent = {
   sectionLabel: "Dúvidas frequentes",
-  headline: "As perguntas que todo paciente faz, respondidas com honestidade.",
+  headline: "As dúvidas mais comuns respondidas com clareza.",
   intro:
-    "Entendemos que este é um tema que ainda carrega muitos mitos. Aqui, vamos direto ao ponto.",
+    "Informações gerais sobre cannabis medicinal - Mitos e Verdades.",
   faqs: [
     {
       id: 1,
       question: "Cannabis medicinal causa dependência ou vício?",
       answer: [
-        "Esta é, de longe, a dúvida mais comum, e a resposta é mais tranquilizadora do que muita gente espera.",
-        "O **CBD (Canabidiol)**, composto presente na maioria dos medicamentos de cannabis medicinal, foi avaliado pela **Organização Mundial da Saúde (OMS)** que concluiu: o CBD **não apresenta potencial significativo de abuso ou dependência** e não é associado a efeitos adversos relacionados ao vício.",
-        "Quanto ao **THC**, presente em alguns medicamentos em doses baixas e controladas: sim, em doses elevadas e uso recreativo não supervisionado, ele pode gerar dependência psicológica em pessoas predispostas. É exatamente por isso que, no tratamento medicinal, ele é prescrito por médico, em dosagem precisa e com acompanhamento regular.",
-        "Em resumo: **tratamento medicinal ≠ uso recreativo**. A diferença está na dose, no controle e na supervisão profissional, assim como acontece com qualquer outro medicamento controlado.",
+        "O **canabidiol (também abreviado muito frequente para CBD)**, presente na maioria dos produtos prescritos no Brasil, **não causa dependência e não produz efeitos de euforia**. É considerado seguro pela **Organização Mundial da Saúde (OMS)**.",
+        "Produtos com teores mais elevados de **Tetrahidrocannabinol (THC)** podem, em casos específicos, causar efeitos sobre a mente, humor e produzir relaxamento, sendo usados em situação que envolvem dor - por isso exigem acompanhamento médico regular. Quando usado sob orientação com acompanhamento médico, o risco é muito baixo.",
+
       ],
       highlight:
         "A OMS não classifica o CBD como substância com potencial de abuso.",
@@ -191,13 +181,8 @@ export const faqContent = {
       id: 2,
       question: "É legal usar cannabis medicinal no Brasil? Posso ser preso?",
       answer: [
-        "Sim, é **completamente legal**, desde que feito dentro das regras. E não, você não pode ser preso por seguir o processo correto.",
-        "Desde **2015**, a ANVISA (Agência Nacional de Vigilância Sanitária) regulamentou o uso de produtos à base de cannabis para fins medicinais no Brasil. Desde então, as normas foram aprimoradas e hoje o acesso é mais claro do que nunca.",
-        "**O que garante a sua segurança jurídica:**",
-        "• **Prescrição médica:** emitida por médico registrado no CRM, com seu nome, CPF e a substância prescrita;\n• **Nota fiscal:** o produto deve ser adquirido de fornecedor autorizado, com nota fiscal em seu nome;\n• **Documentação completa:** guarde sempre a receita e o comprovante de compra.",
-        "Com esses documentos em mãos, você está protegido legalmente. **Nenhuma autoridade pode questionar um paciente que segue o protocolo legal.**",
-        "Uma dica prática: se for viajar com o produto, leve sempre a receita original com você.",
-        "A CanaBene só opera dentro dessas regras. Se você ainda não tem prescrição, podemos te orientar sobre como iniciar esse processo com um médico.",
+        "Sim, o uso de cannabis medicinal é **totalmente legal**. O uso de cannabis medicinal no Brasil é regulamentado pela ANVISA (Agência Nacional de Vigilância Sanitária) desde **2015** e hoje conta com uma legislação clara.",
+        "Desde que você tenha **receita médica** válida e adquira o produto por canais autorizados, **não há nenhum risco legal**. Guardar a receita e a **nota fiscal** do produto é suficiente para comprovar o uso lícito. Não esqueça a sua receita se for viajar com o produto.",
       ],
       highlight:
         "Regulamentado pela ANVISA desde 2015. Com receita e nota fiscal, você está protegido.",
@@ -206,11 +191,7 @@ export const faqContent = {
       id: 3,
       question: "O tratamento deixa o paciente confuso ou eufórico?",
       answer: [
-        "Depende do medicamento prescrito, e o seu médico vai te explicar exatamente o que esperar.",
-        "**Se o seu medicamento é à base de CBD puro:** não. O CBD **não tem propriedades psicoativas**. Ele não altera a consciência, não causa euforia, não deixa «chapado» e não prejudica a capacidade de dirigir ou trabalhar. A grande maioria dos pacientes relata melhora sem qualquer efeito sedativo indesejado.",
-        "**Se o seu medicamento contém THC em associação com CBD:** a dosagem é prescrita de forma gradual e controlada pelo médico, começando sempre por doses muito baixas. O objetivo é alcançar o efeito terapêutico sem comprometer o funcionamento diário. Efeitos como leve sonolência podem ocorrer no início da titulação, é por isso que existe o acompanhamento médico.",
-        "**Na prática:** a maioria dos pacientes em tratamento com cannabis medicinal regulamentada mantém sua rotina normalmente. Trabalham, estudam, cuidam dos filhos.",
-        "Se você tiver qualquer dúvida sobre o medicamento prescrito pelo seu médico, fale com a gente. Estamos aqui para ajudar na interpretação e no acompanhamento.",
+        "A grande maioria dos tratamentos utiliza produtos ricos em **CBD**, que **não possui propriedades psicoativas**, ou seja, não altera a percepção da realidade. Mesmo nos casos em que o médico prescreve fórmulas contendo **THC**, as doses são calculadas de forma precisa para oferecer alívio de sintomas (como dor ou espasmos) **sem causar euforia** ou desorientação, sonolência ou confusão mental. O objetivo médico é sempre o bem-estar sem prejudicar a percepção da realidade.",
       ],
       highlight:
         "CBD não causa euforia. THC é controlado por dosagem precisa e acompanhamento médico.",
@@ -301,52 +282,55 @@ export const faqContent = {
         "Custo médio mensal entre R$ 150 e R$ 800, variando conforme o produto e a dose.",
     },
   ],
-  cta: "Ainda tem dúvidas? Fale com a gente",
+  cta: "Ainda tem dúvidas? Fale conosco",
 };
 
 // ============================================================
-// SEÇÃO 5 - BLOG / BIBLIOTECA (TEASER)
+// SEÇÃO 4 - BLOG / BIBLIOTECA (TEASER)
 // ============================================================
 export const blogContent = {
-  sectionLabel: "Conteúdo e conhecimento",
-  headline: "Informação que empodera. Conhecimento que acolhe.",
+  sectionLabel: "Atualizações",
+  headline: "Informação que facilita o tratamento e melhora os resultados.",
   intro:
-    "Em breve, nosso Blog e Biblioteca de Conteúdo entrarão no ar. Aqui você vai encontrar artigos, guias práticos e referências científicas para entender cada aspecto do tratamento com cannabis medicinal, sempre com linguagem acessível e embasamento real.",
-  categories: [
-    {
-      icon: "📖",
-      title: "Guias para Pacientes",
-      description:
-        "Como iniciar o tratamento, o que levar na consulta, como interpretar a sua prescrição.",
-      tag: "Em breve",
-    },
-    {
-      icon: "🔬",
-      title: "Ciência & Pesquisa",
-      description:
-        "Resumos de estudos clínicos em linguagem acessível. Entenda o que a ciência diz, sem precisar de doutorado.",
-      tag: "Em breve",
-    },
-    {
-      icon: "⚖️",
-      title: "Direitos & Regulamentação",
-      description:
-        "Tudo sobre as leis da ANVISA, seus direitos como paciente e como se proteger juridicamente.",
-      tag: "Em breve",
-    },
-    {
-      icon: "💬",
-      title: "Histórias Reais",
-      description:
-        "Relatos de pacientes (com autorização) que encontraram qualidade de vida com o tratamento.",
-      tag: "Em breve",
-    },
-  ],
+    "Aqui você vai encontrar informações atuais para entender mais sobre o tratamento com cannabis medicinal, com evidências científicas e embasamento real.",
+  futureBlogTeaser: {
+    badge: "Em breve - Área para Blog",
+    label: "Espaço de Informação e Saúde",
+    text: "Estamos preparando um guia completo com artigos médicos, atualizações científicas e histórias de superação para simplificar ainda mais a sua jornada com a cannabis medicinal.",
+  },
   newsletter: {
     label: "Seja o primeiro a saber",
-    text: "Cadastre seu e-mail e receba em primeira mão quando o Blog e a Biblioteca entrarem no ar.",
+    text: "Cadastre seu e-mail e receba em primeira mão as atualizações sobre cannabis medicinal.",
     placeholder: "seu@email.com.br",
     cta: "Quero receber novidades",
+  },
+};
+
+// ============================================================
+// SEÇÃO 5 - SOBRE NÓS
+// ============================================================
+export const aboutContent = {
+  sectionLabel: "Quem somos",
+  headline: "Nascemos para simplificar o que parece complicado.",
+  paragraphs: [
+    "Nosso principal propósito é ajudar você a encontrar o caminho certo para o seu tratamento com cannabis medicinal. Sabemos que o acesso a essa terapia ainda levanta dúvidas sobre prescrição, regulamentação, produtos e segurança.",
+    "Por isso, estamos aqui para orientar cada etapa com informação de qualidade e transparência. Aqui, você não é um número. Você é uma pessoa que merece receber a atenção certa.",
+    "Acreditamos que nenhum paciente deveria perder tempo tentando entender uma burocracia que deveria ser simples. Nosso papel é simplificar o que parece complexo.",
+  ],
+
+  commitment: {
+    title: "Nosso compromisso",
+    items: [
+      "Orientação transparente e baseada em evidências científicas",
+      "Proteção de dados e privacidade asseguradas pela LGPD",
+      "Acolhimento humanizado para simplificar a sua jornada",
+    ],
+  },
+  futureDoctorsTeaser: {
+    badge: "Em breve - Área para Profissionais de Saúde",
+    label: "Você é profissional de saúde?",
+    text: "Em breve, lançamos um espaço exclusivo para profissionais da saúde protocolos clínicos, dosimetria e suporte prescricional. Cadastre seu interesse.",
+    cta: "Quero ser avisado",
   },
 };
 
@@ -355,9 +339,9 @@ export const blogContent = {
 // ============================================================
 export const contactContent = {
   sectionLabel: "Contato",
-  headline: "Pronto para dar o próximo passo?",
+  headline: "Quer falar conosco?",
   subheadline:
-    "Fale com a nossa equipe. Sem julgamentos, sem pressa. Só escuta e orientação.",
+    "Nossa equipe está pronta para te atender.",
   whatsappCta: {
     title: "Atendimento via WhatsApp",
     description:
@@ -379,12 +363,12 @@ export const contactContent = {
         label: "E-mail para profissionais de saúde",
         value: "profissionais@canabene.com.br",
         description:
-          "Médicos e dentistas: canal exclusivo para suporte prescricional. (Área em construção)",
+          "Profissionais da saúde: canal exclusivo para suporte prescricional.",
       },
       {
         icon: "clock",
         label: "Horário de atendimento",
-        value: "Seg-Sex: 8h às 18h | Sábado: 9h às 13h",
+        value: "Seg-Sex: 8h às 20h | Sábado: 9h às 13h",
         description: "Fora do horário? Deixe sua mensagem e retornamos em até 1 dia útil.",
       },
     ],
@@ -395,13 +379,13 @@ export const contactContent = {
 // RODAPÉ (FOOTER)
 // ============================================================
 export const footerContent = {
-  tagline: "Cuidado com base em ciência. Acesso com segurança.",
+  tagline: "Juntos pelo seu bem-estar.",
   links: [
     { label: "Início", href: "#inicio" },
-    { label: "Sobre Nós", href: "#sobre" },
     { label: "O Tratamento", href: "#tratamento" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Conteúdo", href: "#conteudo" },
+    { label: "Dúvidas", href: "#faq" },
+    { label: "Atualizações", href: "#atualizacoes" },
+    { label: "Sobre Nós", href: "#sobre" },
     { label: "Contato", href: "#contato" },
   ],
   legalNotice: `**Aviso Legal:** As informações disponibilizadas neste site têm caráter **exclusivamente informativo e educacional**, não substituindo consulta, diagnóstico ou prescrição médica. O acesso a medicamentos à base de cannabis no Brasil é regulamentado pela ANVISA e **exige prescrição de profissional de saúde habilitado**. A CanaBene não realiza diagnósticos, não prescreve medicamentos e não promove o uso recreativo de cannabis. Todas as informações estão em conformidade com a **RDC ANVISA nº 327/2019** e legislações complementares.`,

@@ -26,7 +26,7 @@ const iconColors = [
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 lg:py-32 bg-white">
+    <section id="contato" className="py-12 lg:py-24 bg-linear-to-b from-brand-surface/40 to-surface-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -42,7 +42,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* WhatsApp Primary CTA */}
           <div className="bg-linear-to-br from-green-500 to-teal-600 rounded-3xl p-10 text-white relative overflow-hidden">
             {/* Decorative */}
@@ -76,7 +76,7 @@ export default function Contact() {
               </a>
 
               <p className="mt-4 text-white/60 text-xs text-center">
-                🔒 {contactContent.whatsappCta.note}
+                {contactContent.whatsappCta.note}
               </p>
             </div>
           </div>
@@ -107,21 +107,6 @@ export default function Contact() {
                   </div>
                 );
               })}
-            </div>
-
-            {/* Trust signals */}
-            <div className="mt-8 p-5 bg-green-50 rounded-2xl border border-green-100">
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-green-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                <div>
-                  <p className="text-green-800 font-semibold text-sm mb-1">Privacidade garantida</p>
-                  <p className="text-green-700 text-xs leading-relaxed">
-                    Todas as conversas são confidenciais. Seus dados são tratados em conformidade com a LGPD (Lei nº 13.709/2018). Nunca vendemos ou compartilhamos informações de pacientes.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

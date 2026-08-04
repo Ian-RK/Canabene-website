@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { blogContent, WHATSAPP_URL } from "../data/content";
+import { Sparkles } from "lucide-react";
+import { blogContent } from "../data/content";
 
 export default function Blog() {
   const [email, setEmail] = useState("");
@@ -13,7 +14,7 @@ export default function Blog() {
   };
 
   return (
-    <section id="conteudo" className="py-24 lg:py-32 bg-linear-to-b from-brand-surface/40 to-surface-white">
+    <section id="atualizacoes" className="py-12 lg:py-24 bg-linear-to-b from-brand-surface/40 to-surface-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -29,34 +30,34 @@ export default function Blog() {
           </p>
         </div>
 
-        {/* Category Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {blogContent.categories.map((cat) => (
-            <div
-              key={cat.title}
-              className="group relative bg-surface-white rounded-2xl border border-brand-muted/15 p-6 hover:border-brand-primary/25 hover:shadow-lg transition-all duration-300 overflow-hidden"
-            >
-              {/* Coming Soon Badge */}
-              <div className="absolute top-4 right-4">
-                <span className="bg-brand-accent/20 text-brand-accent text-xs font-semibold px-2.5 py-1 rounded-full border border-brand-accent/30">
-                  {cat.tag}
-                </span>
-              </div>
-
-              {/* Decorative background */}
-              <div className="absolute inset-0 bg-linear-to-br from-brand-surface to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-
-              <div className="relative z-10">
-                <div className="text-4xl mb-4">{cat.icon}</div>
-                <h3 className="font-bold text-text-primary mb-2 text-base">{cat.title}</h3>
-                <p className="text-sm text-text-secondary leading-relaxed">{cat.description}</p>
-              </div>
+        {/* Future Blog CTA */}
+        <div className="relative overflow-hidden bg-brand-secondary rounded-3xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-sm my-12">
+          <div className="relative z-10 flex flex-col items-center">
+            <div className="inline-flex items-center gap-2 bg-surface-white/10 border border-white/20 text-white/80 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 tracking-wide uppercase">
+              <Sparkles className="w-3.5 h-3.5 text-teal-400" aria-hidden="true" focusable="false"/>
+              {blogContent.futureBlogTeaser.badge}
             </div>
-          ))}
+
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
+              {blogContent.futureBlogTeaser.label}
+            </h3>
+            
+            <p className="text-white/75 text-base md:text-lg leading-relaxed max-w-xl">
+              {blogContent.futureBlogTeaser.text}
+            </p>
+
+            <div className="flex gap-1.5 mt-8">
+              <span className="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse delay-75"></span>
+              <span className="w-2 h-2 rounded-full bg-teal-200 animate-pulse delay-150"></span>
+            </div>
+
+          </div>
         </div>
 
+
         {/* Newsletter Signup */}
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <div className="bg-surface-white rounded-3xl border-2 border-brand-primary/15 p-10 shadow-sm">
             <div className="w-14 h-14 bg-brand-surface rounded-2xl flex items-center justify-center mx-auto mb-5">
               <svg className="w-7 h-7 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,27 +101,6 @@ export default function Blog() {
               Sem spam. Seus dados são protegidos pela LGPD. Cancele quando quiser.
             </p>
           </div>
-        </div>
-
-        {/* Interim content prompt */}
-        <div className="mt-12 text-center">
-          <p className="text-text-secondary mb-4">
-            Enquanto o blog não está no ar, nossa equipe responde suas dúvidas diretamente.
-          </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-brand-primary font-semibold hover:text-brand-primary transition-colors"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-            Perguntar no WhatsApp agora
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

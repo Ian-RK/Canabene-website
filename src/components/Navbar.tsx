@@ -5,10 +5,10 @@ import { cn } from "../utils/cn";
 
 const navLinks = [
   { label: "Início", href: "#inicio" },
-  { label: "Sobre Nós", href: "#sobre" },
   { label: "O Tratamento", href: "#tratamento" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Conteúdo", href: "#conteudo" },
+  { label: "Dúvidas", href: "#faq" },
+  { label: "Atualizações", href: "#atualizacoes" },
+  { label: "Sobre Nós", href: "#sobre" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -77,9 +77,9 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <img
-              src="/images/Icon-Canabene-no-bg.png"
+              src="/imgs/Icon-Canabene-no-bg.png"
               alt="CanaBene logo"
-              className="h-14 lg:h-18 w-auto object-contain transition-opacity group-hover:opacity-90"
+              className="h-14 lg:h-16 w-auto object-contain transition-opacity group-hover:opacity-90"
             />
 
             <div className="flex items-baseline">

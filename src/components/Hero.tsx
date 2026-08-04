@@ -30,23 +30,12 @@ export default function Hero() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('/imgs/hero-bg-2.jpeg')" }}
       />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-linear-to-br from-brand-secondary/80 via-brand-secondary/70 to-brand-secondary/80" />
-      {/* Subtle pattern */}
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-      }} />
+      <div className="absolute inset-0 bg-linear-to-br from-brand-secondary/30 via-brand-secondary/60 to-brand-secondary/80" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-brand-primary/20 border border-brand-primary/40 text-brand-surface px-4 py-1.5 rounded-full text-sm font-medium mb-8 backdrop-blur-sm">
-          <svg className="w-3.5 h-3.5 text-brand-primary" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
-          {heroContent.badge}
-        </div>
 
         {/* Main Headline */}
         <h1 className="font-fraunces text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
@@ -83,16 +72,16 @@ export default function Hero() {
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 max-w-3xl mx-auto">
           {heroContent.trustBadges.map((badge) => (
             <div
               key={badge.label}
-              className="flex items-center gap-2.5 bg-surface-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-3 text-white/90"
+              className="flex items-center justify-center gap-2.5 bg-surface-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 text-white/90"
             >
               <span className="text-brand-primary shrink-0">
                 {trustIcons[badge.icon]}
               </span>
-              <span className="text-xs font-medium text-left leading-tight">{badge.label}</span>
+              <span className="text-xs font-medium text-center leading-tight">{badge.label}</span>
             </div>
           ))}
         </div>

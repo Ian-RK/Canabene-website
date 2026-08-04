@@ -27,7 +27,7 @@ export default function WhatsAppFloat() {
       {showTooltip && (
         <div className="bg-surface-white text-text-primary text-sm font-medium px-4 py-2.5 rounded-2xl shadow-lg border border-brand-muted/15 max-w-48 leading-tight animate-fadeIn">
           <div className="text-xs text-text-secondary/80 mb-0.5">CanaBene</div>
-          Olá! Posso te ajudar com dúvidas sobre o tratamento? 😊
+          Olá! Posso te ajudar com dúvidas sobre o tratamento?
           <div className="absolute right-0 bottom-3 w-0 h-0 border-l-8 border-l-surface-white border-t-4 border-t-transparent border-b-4 border-b-transparent translate-x-2" />
         </div>
       )}

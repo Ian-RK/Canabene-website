@@ -1,47 +1,14 @@
-import type { ReactElement } from "react";
 import {
   ArrowRight,
   BadgeCheck,
-  BookOpen,
   Check,
   CheckCircle,
-  HeartHandshake,
-  ShieldCheck,
-  Users,
 } from "lucide-react";
 import { aboutContent, WHATSAPP_URL } from "../data/content";
 
-const icons: Record<string, ReactElement> = {
-  heart: (
-    <HeartHandshake className="w-6 h-6" aria-hidden="true" focusable="false" />
-  ),
-  "book-open": (
-    <BookOpen className="w-6 h-6" aria-hidden="true" focusable="false" />
-  ),
-  "shield-check": (
-    <ShieldCheck className="w-6 h-6" aria-hidden="true" focusable="false" />
-  ),
-  users: (
-    <Users className="w-6 h-6" aria-hidden="true" focusable="false" />
-  ),
-};
-
-const valueColors = [
-  { bg: "bg-rose-50", icon: "text-rose-500", border: "border-rose-100" },
-  { bg: "bg-blue-50", icon: "text-blue-500", border: "border-blue-100" },
-  { bg: "bg-green-50", icon: "text-green-500", border: "border-green-100" },
-  { bg: "bg-amber-50", icon: "text-amber-500", border: "border-amber-100" },
-];
-
-const statColors = [
-  { bg: "bg-green-50", value: "text-green-600", border: "border-green-100" },
-  { bg: "bg-teal-50", value: "text-teal-600", border: "border-teal-100" },
-  { bg: "bg-emerald-50", value: "text-emerald-600", border: "border-emerald-100" },
-];
-
 export default function About() {
   return (
-    <section id="sobre" className="py-24 lg:py-32 bg-white">
+    <section id="sobre" className="py-12 lg:py-24 bg-surface-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Label */}
         <div className="text-center mb-16">
@@ -54,21 +21,21 @@ export default function About() {
         </div>
 
         {/* Two column layout */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left: Text + Commitment card */}
           <div className="space-y-10">
             <div className="space-y-6">
               {aboutContent.paragraphs.map((p, i) => (
-                <p key={i} className="text-gray-600 leading-relaxed text-lg">
+                <p key={i} className="text-text-secondary leading-relaxed text-lg">
                   {p}
                 </p>
               ))}
             </div>
 
-            {/* Commitment card (moved here, keeps green twisted background) */}
+            {/* Commitment card */}
             <div className="relative">
               <div className="absolute -inset-4 bg-linear-to-br from-green-100 to-teal-100 rounded-3xl transform rotate-2 opacity-60" />
-              <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+              <div className="relative bg-surface-white rounded-3xl p-8 shadow-xl border border-brand-surface">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
                     <CheckCircle className="w-5 h-5 text-brand-primary" aria-hidden="true" focusable="false" />
@@ -77,7 +44,7 @@ export default function About() {
                 </div>
                 <ul className="space-y-4">
                   {aboutContent.commitment.items.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-gray-700">
+                    <li key={item} className="flex items-start gap-3 text-text-primary">
                       <Check className="w-5 h-5 text-brand-primary mt-0.5 shrink-0" strokeWidth={2.5} aria-hidden="true" focusable="false" />
                       <span className="text-sm leading-relaxed">{item}</span>
                     </li>
@@ -87,63 +54,31 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right: Image + Stats */}
+          {/* Right: Image*/}
           <div className="space-y-12">
             {/* Team image */}
             <div className="relative">
               <div className="absolute -inset-4 bg-linear-to-br from-green-100 to-teal-100 rounded-3xl transform rotate-2 opacity-60" />
               <img
-                src="public/images/about-img.jpg"
+                src="imgs/about-img.jpg"
                 alt="Equipe CanaBene em atendimento humanizado"
-                className="relative rounded-3xl shadow-xl border border-gray-100 object-cover w-full h-[600px]"
+                className="relative rounded-3xl shadow-xl border border-brand-surface object-cover w-full h-[600px]"
                 loading="lazy"
               />
-            </div>
-
-            {/* Stats Row (moved here) */}
-            <div className="grid grid-cols-3 gap-4">
-              {aboutContent.stats.map((stat, i) => {
-                const colors = statColors[i % statColors.length];
-                return (
-                  <div key={stat.label} className={`text-center p-4 ${colors.bg} rounded-2xl border ${colors.border}`}>
-                    <div className={`text-2xl font-bold ${colors.value}`}>{stat.value}</div>
-                    <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </div>
 
-        {/* Values Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {aboutContent.values.map((value, i) => {
-            const colors = valueColors[i % valueColors.length];
-            return (
-              <div
-                key={value.title}
-                className={`p-6 rounded-2xl border ${colors.bg} ${colors.border} hover:shadow-md transition-shadow`}
-              >
-                <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center ${colors.icon} mb-4 border ${colors.border}`}>
-                  {icons[value.icon]}
-                </div>
-                <h3 className="font-bold text-brand-secondary mb-2">{value.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{value.description}</p>
-              </div>
-            );
-          })}
-        </div>
-
         {/* Future Doctors CTA */}
         <div className="bg-brand-secondary rounded-3xl p-8 lg:p-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white/80 px-4 py-1.5 rounded-full text-xs font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-surface-white/10 border border-white/20 text-white/80 px-4 py-1.5 rounded-full text-xs font-medium mb-4">
             <BadgeCheck className="w-3.5 h-3.5 text-teal-400" aria-hidden="true" focusable="false" />
             {aboutContent.futureDoctorsTeaser.badge}
           </div>
           <h3 className="text-2xl font-bold text-white mb-3">
             {aboutContent.futureDoctorsTeaser.label}
           </h3>
-          <p className="text-gray-400 max-w-xl mx-auto mb-6">
+          <p className="text-white/75 max-w-2xl mx-auto mb-6">
             {aboutContent.futureDoctorsTeaser.text}
           </p>
           <a
