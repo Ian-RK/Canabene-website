@@ -17,6 +17,7 @@ build/
 docs/
 imgs/
 public/images
+candidate-imgs/
 
 # Logs
 logs
