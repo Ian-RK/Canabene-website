@@ -60,7 +60,7 @@ export default function Treatment() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/imgs/treatment-component-properties.webp"
+                src="imgs/treatment-component-properties.webp"
                 alt="Grafico de propriedades dos componentes do tratamento com cannabis medicinal."
                 className="w-108 h-auto rounded-xl"
                 loading="lazy"
@@ -136,7 +136,7 @@ export default function Treatment() {
           <div className="relative">
             <div className="absolute -inset-4 bg-linear-to-br from-green-100 to-teal-100 rounded-3xl transform rotate-2 opacity-60" />
             <img 
-              src="/imgs/treatment-women-taking-oil.webp" 
+              src="imgs/treatment-women-taking-oil.webp" 
               alt="Paciente utilizando cannabis medicinal." 
               className="relative rounded-3xl shadow-xl border border-brand-surface object-cover w-full h-[600px]" 
               loading="lazy" 
@@ -150,7 +150,7 @@ export default function Treatment() {
           <div className="relative">
             <div className="absolute -inset-4 bg-linear-to-br from-green-100 to-teal-100 rounded-3xl transform -rotate-2 opacity-60" />
             <img 
-              src="/imgs/treatment-family.webp" 
+              src="imgs/treatment-family.webp" 
               alt="Família vivendo com qualidade de vida." 
               className="relative rounded-3xl shadow-xl border border-brand-surface object-cover w-full h-[640px]" 
               loading="lazy" 

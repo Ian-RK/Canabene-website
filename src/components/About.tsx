@@ -60,7 +60,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-4 bg-linear-to-br from-green-100 to-teal-100 rounded-3xl transform rotate-2 opacity-60" />
               <img
-                src="/imgs/about-img.webp"
+                src="imgs/about-img.webp"
                 alt="Equipe CanaBene em atendimento humanizado"
                 className="relative rounded-3xl shadow-xl border border-brand-surface object-cover w-full h-[600px]"
                 loading="lazy"
