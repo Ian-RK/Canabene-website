@@ -77,7 +77,7 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <img
-              src="/imgs/Icon-Canabene-no-bg.png"
+              src="/imgs/Icon-Canabene-no-bg.webp"
               alt="CanaBene logo"
               className="h-14 lg:h-16 w-auto object-contain transition-opacity group-hover:opacity-90"
             />

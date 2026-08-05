@@ -7,7 +7,6 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
-import SeoPanel from "./components/SeoPanel";
 
 export default function App() {
   return (
@@ -41,9 +40,6 @@ export default function App() {
 
       {/* Floating WhatsApp CTA */}
       <WhatsAppFloat />
-
-      {/* SEO Reference Panel - Developer Tool */}
-      <SeoPanel />
     </div>
   );
 }

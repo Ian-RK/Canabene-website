@@ -27,7 +27,7 @@
   }
 
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter Variable', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     color: var(--color-text-primary);
     background: var(--color-surface-white);
@@ -45,7 +45,7 @@
   }
   
   .font-fraunces {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces Variable', serif;
   }
 
   .animate-fadeIn {

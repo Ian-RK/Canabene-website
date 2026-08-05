@@ -15,6 +15,7 @@ build/
 
 # Raw Project Documents 
 docs/
+candidate-imgs/
 
 # Logs
 logs

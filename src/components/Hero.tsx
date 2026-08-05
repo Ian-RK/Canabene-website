@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/imgs/hero-bg-2.jpeg')" }}
+        style={{ backgroundImage: "url('/imgs/hero-bg.webp')" }}
       />
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-linear-to-br from-brand-secondary/30 via-brand-secondary/60 to-brand-secondary/80" />

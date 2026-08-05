@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-12 h-12 rounded-xl bg-linear-to-br from-white to-brand-primary flex items-center justify-center shadow-md">
                 <img
-                  src="/imgs/Icon-Canabene-no-bg.png"
+                  src="/imgs/Icon-Canabene-no-bg.webp"
                   alt="CanaBene logo"
                   className="h-10 lg:h-12 w-auto object-contain transition-opacity group-hover:opacity-90"
                 />
