@@ -30,7 +30,7 @@ export default function Treatment() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-brand-primary font-semibold text-sm uppercase tracking-widest mb-4">
+          <span className="inline-block text-brand-primary font-semibold text-lg uppercase tracking-widest mb-4">
             {treatmentContent.sectionLabel}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary max-w-3xl mx-auto mb-4"
@@ -43,26 +43,47 @@ export default function Treatment() {
         </div>
 
         {/* How It Works */}
-        <div className="bg-linear-to-br from-brand-primary to-brand-secondary rounded-3xl p-4 lg:p-8 mb-12 text-white">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-surface-white/20 rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold">{treatmentContent.howItWorks.title}</h3>
+        <div className="relative mb-16 overflow-hidden rounded-3xl border border-brand-muted/15 bg-surface-white shadow-sm">
+          <div className="absolute top-0 left-0 h-1 w-full bg-linear-to-r from-brand-primary via-brand-accent to-brand-secondary" />
+
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr] items-stretch">
+            {/* Text */}
+            <div className="relative p-8 sm:p-10 lg:p-12">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-surface text-brand-primary text-sm font-bold">
+                  01
+                </span>
+
+                <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">
+                  Como funciona
+                </span>
               </div>
-              <p className="text-white/90 leading-relaxed text-lg">
+
+              <h3
+                className="text-3xl sm:text-4xl font-bold text-text-primary leading-tight mb-6 max-w-xl"
+                style={{ fontFamily: "'Fraunces', serif" }}
+              >
+                {treatmentContent.howItWorks.title}
+              </h3>
+
+              <div className="w-16 h-1 bg-brand-primary rounded-full mb-6" />
+
+              <p className="text-text-secondary leading-relaxed text-lg max-w-xl">
                 <RichText text={treatmentContent.howItWorks.body} />
               </p>
+
+              <div className="mt-8 flex items-center gap-3 text-sm text-text-secondary">
+                <div className="w-2 h-2 rounded-full bg-brand-primary shrink-0" />
+                <span>Informação clara para entender o tratamento</span>
+              </div>
             </div>
-            <div className="flex justify-center">
+
+            {/* Image */}
+            <div className="relative min-h-80 lg:min-h-full bg-brand-secondary/90 ">
               <img
                 src="imgs/treatment-component-properties.webp"
-                alt="Grafico de propriedades dos componentes do tratamento com cannabis medicinal."
-                className="w-108 h-auto rounded-xl"
+                alt="Componentes do tratamento com cannabis medicinal"
+                className="absolute inset-0 w-full h-full object-contain p-6 sm:p-8 lg:p-10 "
                 loading="lazy"
               />
             </div>
@@ -75,24 +96,31 @@ export default function Treatment() {
             <div
               key={compound.acronym}
               className={`rounded-3xl p-8 border-2 ${
-                compound.color === "green"
+                compound.color === "primary"
                   ? "bg-brand-surface border-brand-primary/25"
-                  : "bg-brand-secondary/5 border-brand-accent/40"
+                  : compound.color === "secondary"
+                    ? "bg-brand-surface border-brand-secondary/25"
+                    : compound.color === "accent"
+                      ? "bg-brand-surface border-brand-accent/35"
+                      : "bg-brand-surface border-brand-muted/30"
               }`}
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className={`text-3xl font-black ${
-                  compound.color === "green" ? "text-brand-primary" : "text-brand-accent"
-                } leading-none`}>
+                <div
+                  className={`text-3xl font-black leading-none ${
+                    compound.color === "primary"
+                      ? "text-brand-primary"
+                      : compound.color === "secondary"
+                        ? "text-brand-secondary"
+                        : compound.color === "accent"
+                          ? "text-brand-accent"
+                          : "text-brand-muted"
+                  }`}
+                >
                   {compound.acronym}
                 </div>
                 <div>
                   <div className="font-bold text-text-primary text-lg">{compound.name}</div>
-                  <div className={`text-sm font-medium ${
-                    compound.color === "green" ? "text-brand-primary" : "text-brand-accent"
-                  }`}>
-                    {compound.acronym === "CBD" ? "Sem propriedade psicoativa" : "Uso controlado e prescrito"}
-                  </div>
                 </div>
               </div>
               <p className="text-text-secondary leading-relaxed">{compound.description}</p>
@@ -218,24 +246,6 @@ export default function Treatment() {
 
                     {isOpen && (
                       <div className="px-6 pb-6">
-                        <div className="flex items-start gap-3 bg-brand-surface border border-brand-primary/25 rounded-xl p-4 mb-5">
-                          <svg
-                            className="w-4 h-4 text-brand-primary shrink-0 mt-0.5"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-
-                          <span className="text-brand-primary text-sm font-medium leading-relaxed">
-                            {faq.highlight}
-                          </span>
-                        </div>
-
                         <div className="space-y-3 pl-12">
                           {faq.answer.map((paragraph, i) => (
                             <p
@@ -320,7 +330,7 @@ export default function Treatment() {
           </div>
 
           {/* CTA */}
-          <div className="mt-18 text-center">
+          <div className="mt-32 text-center">
             <div className="inline-block bg-brand-surface rounded-3xl border border-brand-primary/20 p-8">
               <p className="text-brand-primary font-medium mb-5">
                 Pronto para entender se esse tratamento é indicado para o seu caso?

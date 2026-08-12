@@ -12,7 +12,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Label */}
         <div className="text-center mb-16">
-          <span className="inline-block text-brand-primary font-semibold text-sm uppercase tracking-widest mb-4">
+          <span className="inline-block text-brand-primary font-semibold text-lg uppercase tracking-widest mb-4">
             {aboutContent.sectionLabel}
           </span>
           <h2 className="font-fraunces text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-secondary max-w-3xl mx-auto">

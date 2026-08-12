@@ -1,19 +1,13 @@
 import type { ReactElement } from "react";
-import { FileText, HeartHandshake, Lock, ShieldCheck } from "lucide-react";
+import { FileText, Lock } from "lucide-react";
 import { heroContent, WHATSAPP_URL } from "../data/content";
 
 const trustIcons: Record<string, ReactElement> = {
-  shield: (
-    <ShieldCheck className="w-5 h-5" aria-hidden="true" focusable="false" />
-  ),
   "file-text": (
     <FileText className="w-5 h-5" aria-hidden="true" focusable="false" />
   ),
   lock: (
     <Lock className="w-5 h-5" aria-hidden="true" focusable="false" />
-  ),
-  "message-circle": (
-    <HeartHandshake className="w-5 h-5" aria-hidden="true" focusable="false" />
   ),
 };
 
@@ -48,7 +42,7 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <div className="flex items-center justify-center mb-8">
           <a
             href={WHATSAPP_URL}
             target="_blank"
@@ -60,19 +54,10 @@ export default function Hero() {
             </svg>
             {heroContent.cta}
           </a>
-          <button
-            onClick={() => scrollTo("faq")}
-            className="flex items-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-2xl text-base font-semibold transition-all duration-300 hover:bg-surface-white/10 w-full sm:w-auto justify-center"
-          >
-            {heroContent.ctaSecondary}
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-3 max-w-3xl mx-auto">
           {heroContent.trustBadges.map((badge) => (
             <div
               key={badge.label}

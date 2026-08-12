@@ -39,7 +39,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-brand-primary font-semibold text-sm uppercase tracking-widest mb-4">
+          <span className="inline-block text-brand-primary font-semibold text-lg uppercase tracking-widest mb-4">
             {faqContent.sectionLabel}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary mb-4"
@@ -92,16 +92,6 @@ export default function FAQ() {
 
                 {isOpen && (
                   <div className="px-6 pb-6">
-                    {/* Highlight */}
-                    <div className="flex items-start gap-3 bg-brand-surface border border-brand-primary/25 rounded-xl p-4 mb-5">
-                      <svg className="w-4 h-4 text-brand-primary shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-brand-primary text-sm font-medium leading-relaxed">
-                        {faq.highlight}
-                      </span>
-                    </div>
-
                     {/* Answer paragraphs */}
                     <div className="space-y-3 pl-12">
                       {faq.answer.map((paragraph, i) => (

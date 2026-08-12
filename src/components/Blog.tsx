@@ -18,7 +18,7 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-brand-primary font-semibold text-sm uppercase tracking-widest mb-4">
+          <span className="inline-block text-brand-primary font-semibold text-lg uppercase tracking-widest mb-4">
             {blogContent.sectionLabel}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary max-w-3xl mx-auto mb-4"
